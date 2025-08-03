@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Build Portfolio</title>
+  <link rel="stylesheet" href="buildnow.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+
+<div class="container py-5">
+  <div class="card p-4 shadow-lg" style="max-width: 600px; margin: auto; border-radius: 15px;">
+    <h2 class="text-center mb-4">Build Your Portfolio</h2>
+
+<form id="portfolioForm">
+  <input type="file" id="profileInput" required />
+  <input type="text" id="nameInput" placeholder="Your Name" required />
+  <textarea id="bioInput" placeholder="Short Bio" required></textarea>
+  <textarea id="experience" placeholder="Experience" required></textarea>
+  <input type="email" id="emailInput" placeholder="Email" required />
+  <input type="tel" id="phoneInput" placeholder="Phone Number" required />
+
+  <!-- 🔥 New Fields Below -->
+  <textarea id="skillsInput" placeholder="Your Skills (comma separated)" required></textarea>
+  <input type="text" id="locationInput" placeholder="Your Location" required />
+  <input type="text" id="linkedinInput" placeholder="LinkedIn Profile URL" />
+
+  <div id="socialLinksContainer">
+    <input type="url" class="socialLinkInput" placeholder="Social Link URL" />
+  </div>
+  <button type="button" onclick="addSocialLink()">+ Add Social Link</button>
+
+  <select id="themeInput">
+    <option value="dark">Dark Theme</option>
+    <option value="light">Light Theme</option>
+  </select>
+
+  <button type="submit">Generate Portfolio</button>
+</form>
+
+
+
+
+  </div>
+</div>
+
+
+<script src="buildnow.js"></script>
+
+
+</body>
+</html>
